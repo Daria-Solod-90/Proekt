@@ -1,0 +1,133 @@
+body {
+	margin: 0;
+	font: normal 16px/24px Arial, 'Roboto', sans-serif;
+}
+p {
+	margin: 0;
+}
+.container {
+	width: 1168px;
+	margin: 0 auto;
+	padding: 16px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+
+
+/* header */
+.topheader .container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px;
+	align-items: center;
+}
+.topheader {
+	background: #2a1047;
+	color: #fff;
+	
+}
+.mainheader {
+	background: #ce37ff;
+	color: #fff;
+}
+.bottomheader {
+	
+}
+#yourcity {
+	cursor: pointer;
+}
+.topmenu {
+	text-align: center;
+}
+.topmenu a {
+	text-decoration: none;
+	padding: 10px;
+}
+.line-point {
+	color: #fff;
+}
+.pulldown-point {
+	color: #000;
+	background: #fff;
+}
+.menupoint {
+	display: inline-block;
+	position: relative;
+	margin: 0 10px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+.menupoint > span {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	padding: 20px 0 5px;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
+}
+.menupoint:hover > span,
+.menupoint > span:hover {
+	display: block;
+}
+.menupoint:hover {
+	border-color: #000;
+	background: #fff;
+	z-index:2;
+}
+.menupoint:hover .line-point {
+	color: #ce37ff;
+}
+.pulldown-point:hover {
+	color: #000;
+}
+
+
+/* main */
+main {
+	flex: 1 1 auto;
+	background: #fff;
+}
+
+/* footer */
+footer {
+	background: #2a1047;
+	color: #fff;
+}
+.topfooter{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px;
+	align-items: center;
+}
+footer .container {
+	justify-content: space-around;
+	gap: 30px;
+	font: 15px/25px,sans-serif;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.title{
+	font: bold 30px 'Roboto', sans-serif;
+}
+.item{
+	opacity: 0.6;
+}
+.bottomfooter{
+	opacity: 0.6;
+}
+
+
