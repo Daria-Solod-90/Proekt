@@ -55,6 +55,7 @@ p {
 .pulldown-point {
 	color: #000;
 	background: #fff;
+	
 }
 .menupoint {
 	display: inline-block;
@@ -86,7 +87,11 @@ p {
 .pulldown-point:hover {
 	color: #000;
 }
-
+#carouselExampleControls{
+	width: 1000px;
+	margin: auto;
+	padding:10px;
+}
 
 /* main */
 main {
@@ -98,6 +103,8 @@ main {
 footer {
 	background: #2a1047;
 	color: #fff;
+	height: 300px;
+	padding:10px;
 }
 .topfooter{
 	display: flex;
@@ -111,14 +118,6 @@ footer .container {
 	justify-content: space-around;
 	gap: 30px;
 	font: 15px/25px,sans-serif;
-}
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
 }
 .title{
 	font: bold 30px 'Roboto', sans-serif;
