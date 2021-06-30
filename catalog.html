@@ -2,13 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Первая страница</title>
+	<title>Catalog Page</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -21,8 +21,9 @@
 				</div>
 				</div>
 			</div>
-			<div class ="mainheader">
+			<div class ="bottomheader">
                     <nav class="topmenu container">
+					<img src="images/logo2.jpg" alt="" class="logo">
                         <span class="menupoint">
                             <a href="#" class="line-point">Каталог</a>
                             <span>
@@ -53,9 +54,11 @@
 						<span class="menupoint">
                             <a href="#" class="line-point">&#128269;</a>
                         </span>
+						<button type="button" class="basket">5</button>
+                        <div class="basket-label">В корзине 5 пряников</div>
                     </nav>
 			</div>
-			<div class="bottomheader">
+			<div class="header-slider">
 				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -79,18 +82,19 @@
 				</div>
 			</div>
 		</header>
-		<main class="container catalog">
+		<main class="catalog">
                 <aside>
-                    <div class="menu">Новинки</div>
-                    <div class="menu">Sale</div>
-					<div class="menu">Готовые пряники</div>
-					<div class="menu">Формы для пряников</div>
-					<div class="menu">Инвентарь</div>
-					<div class="menu">Пищевые красители</div>
-					<div class="menu">Посыпка и декор</div>
-					<div class="menu">Упаковка</div>
-					<div class="menu">Пищевые красители</div>
-					
+					<div class="catmenu">
+						<div class="catmenu_item">Новинки</div>
+						<div class="catmenu_item">Sale</div>
+						<div class="catmenu_item">Готовые пряники</div>
+						<div class="catmenu_item">Формы для пряников</div>
+						<div class="catmenu_item">Инвентарь</div>
+						<div class="catmenu_item">Пищевые красители</div>
+						<div class="catmenu_item">Посыпка и декор</div>
+						<div class="catmenu_item">Упаковка</div>
+						<div class="catmenu_item">Пищевые красители</div>
+					</div>
                 </aside>
                 <div class="cat-blocks">
                     <div class="cat-unit"></div>

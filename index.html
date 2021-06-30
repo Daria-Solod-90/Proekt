@@ -6,9 +6,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -21,14 +21,14 @@
 				</div>
 				</div>
 			</div>
-			<div class ="mainheader">
+			<div class ="bottomheader">
                     <nav class="topmenu container">
+					<img src="images/logo2.jpg" alt="" class="logo">
                         <span class="menupoint">
                             <a href="#" class="line-point">Каталог</a>
                             <span>
 								<a href="#" class="pulldown-point">Готовые пряники</a>
                                 <a href="#" class="pulldown-point">Формы для пряников</a>
-								<a href="#" class="pulldown-point">Айсинг</a>
                                 <a href="#" class="pulldown-point">Инвентарь</a>
                                 <a href="#" class="pulldown-point">Пищевые красители</a>
                                 <a href="#" class="pulldown-point">Посыпка и декор</a>
@@ -54,9 +54,11 @@
 						<span class="menupoint">
                             <a href="#" class="line-point">&#128269;</a>
                         </span>
+						<button type="button" class="basket">5</button>
+                        <!--<div class="basket-label">В корзине 5 пряников</div>-->
                     </nav>
 			</div>
-			<div class="bottomheader">
+			<div class="header-slider">
 				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -111,6 +113,15 @@
             </div>
 			</div>
 		</footer>
+	</div>
+	<div class="popup-desk">
+		<div class ="popup">
+			<p class="popup-header">Личный кабинет</p>
+			<input type="text" name="fullname" placeholder="Логин">
+			<input type="password" name="password" placeholder="Пароль">
+			<button type="submit">Войти</button>
+			<a href="#">Зарегистрироваться</a> 
+		</div>
 	</div>
 </body>
 </html>	
