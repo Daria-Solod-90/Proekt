@@ -25,7 +25,6 @@ p {
 	justify-content: space-around;
 	align-items: center;
 	padding: 30px;
-	align-items: center;
 }
 .topheader {
 	background: #2a1047;
@@ -48,6 +47,7 @@ p {
 .topmenu a {
 	text-decoration: none;
 	padding: 10px;
+	white-space: nowrap;
 }
 .line-point {
 	color: #fff;
@@ -55,6 +55,8 @@ p {
 .pulldown-point {
 	color: #000;
 	background: #fff;
+	display: block;
+	text-align: center;
 	
 }
 .menupoint {
@@ -67,10 +69,11 @@ p {
 .menupoint > span {
 	display: none;
 	position: absolute;
-	top: 20px;
+	top: calc(100% + 5px);
 	left: 0;
 	padding: 20px 0 5px;
 	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
+	background: #ddd;
 }
 .menupoint:hover > span,
 .menupoint > span:hover {
@@ -129,4 +132,72 @@ footer .container {
 	opacity: 0.6;
 }
 
-
+/* catalog */
+.catalog {
+	display: flex;
+	gap:8px;
+}
+aside{
+	flex: none;
+	width: 180px;
+	height:560px;
+	background: #ce37ff;
+	color: #fff;
+}
+.cat-blocks {
+	flex: 1 1 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap:8px;
+}
+.cat-unit {
+	height: 300px;
+	width: 350px;
+	background: pink;
+}
+.menu{
+	display:flex;
+	flex-direction: column;
+	height:80px;
+	border: 1px solid white;
+    justify-content: center;
+	padding: 10px;
+}
+.menu:hover {
+	background: #fff;
+	color: #ce37ff;
+	cursor: pointer;
+}
+/* different screens */
+@media (min-width: 576px) {
+	.cat-blocks {
+		gap: 32px;
+	}
+	aside {
+		width: 260px;
+	}
+	.catalog {
+		gap: 16px;
+	}
+}
+@media (min-width: 768px) {
+	.cat-blocks {
+		gap: 4px;
+	}
+}
+@media (min-width: 992px) {
+	.cat-blocks {
+		gap: 10px;
+	}
+}
+@media (min-width: 1200px) {
+	.cat-blocks {
+		gap: 22px;
+	}
+}
+@media (min-width: 1400px) {
+	.cat-blocks {
+		gap: 14px;
+	}
+}
