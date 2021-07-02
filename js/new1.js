@@ -1,0 +1,1 @@
+$('#privet').click(function(){alert('Привет!')});
