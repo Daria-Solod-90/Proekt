@@ -50,14 +50,7 @@ p {
 	padding: 30px;
 	box-sizing: border-box;
 }
-input[type="name"] {
-	width: 200px;
-	height: 50px;
-	border: 1px solid #000;
-	box-sizing: border-box;
-	border-radius: 10px;
-}
-input[type="password"] {
+input[type="text"], input[type="password"] {
 	width: 200px;
 	height: 50px;
 	border: 1px solid #000;
@@ -79,6 +72,7 @@ button {
 	justify-content: space-around;
 	align-items: center;
 	padding: 30px;
+	height: 100px;
 }
 .topheader {
 	background: #2a1047;
@@ -168,7 +162,56 @@ button {
 	opacity: 1;
 	transition: opacity 5s ease;
 }
-
+/* slider */
+.slider {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 400px;
+}
+.slide.active {
+    z-index: 1;
+}
+.slide img {
+    width: 1000px;
+    height: 400px;
+}
+.rule {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 2;
+}
+.slider:hover .rule {
+    display: block;
+}
+.rule span {
+    position: absolute;
+    top: calc(50% - 17px);
+    cursor: pointer; /* курсор показывает, что тут активный элемент */
+    user-select: none; /* запрещаем выделение текста - кнопка не "синеет", как по ней ни кликай*/
+    font-size: 30px;
+    width: 34px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+}
+.left {
+    left: 5%;
+}
+.right {
+    right: 5%;
+}
 /* main */
 main {
 	flex: 1 1 auto;
@@ -224,6 +267,42 @@ footer .container {
 	background: pink;
 }
 
+/* order */
+.order {
+	width: 100%;
+}
+.nihil {
+	display: none;
+}
+.empty .nihil {
+	display: block;
+}
+.empty .table,
+.empty #orderdata {
+	display: none;
+}
+.rub:after, .sum:after, .allsum:after {
+	content: ' \20bd';
+}
+.num input {
+	border: 0;
+	width: 50px;
+}
+.del {
+	width: 60px;
+}
+.del > div {
+	width: 24px;
+	height: 24px;
+	border-radius: 24px;
+	text-align: center;
+	font: normal 24px/24px Arial;
+	transform: rotate(45deg);
+	transform-origin: center;
+	background: #ce37ff;
+	color: white;
+	cursor: pointer;
+}
 
 /* aside */
 aside{

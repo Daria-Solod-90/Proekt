@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Product Page</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/calendar.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="topheader">
+				<div class="container">
+				<div id="yourcity">Ваш город: Москва</div>
+				<div class ="phone">&#128222; +7(903)777-77-77</div>
+				<div class="inst"><a href="https://www.instagram.com/pryanikland_msk/"><img src="images/instagram.png"></a>
+				</div>
+				<button type="button" class="basket">5</button>
+				</div>
+			</div>
+			<div class ="bottomheader">
+                    <nav class="topmenu container">
+					<img src="images/logo2.jpg" alt="" class="logo">
+                        <span class="menupoint">
+                            <a href="#" class="line-point">Каталог</a>
+                            <span>
+								<a href="#" class="pulldown-point">Готовые пряники</a>
+                                <a href="#" class="pulldown-point">Формы для пряников</a>
+                                <a href="#" class="pulldown-point">Инвентарь</a>
+                                <a href="#" class="pulldown-point">Пищевые красители</a>
+                                <a href="#" class="pulldown-point">Посыпка и декор</a>
+                                <a href="#" class="pulldown-point">Упаковка</a>   
+                            </span>
+                        </span>
+						<span class="menupoint">
+                            <a href="#" class="line-point">Sale</a>
+						</span>
+						<span class="menupoint">
+                            <a href="#" class="line-point">Как купить</a>
+                            <span>
+                                <a href="#" class="pulldown-point">Условия оплаты</a>
+                                <a href="#" class="pulldown-point">Условия доставки</a>
+                            </span>
+                        </span>
+						<span class="menupoint">
+                            <a href="#" class="line-point">О производители</a>
+						</span>
+						<span class="menupoint">
+                            <a href="#" class="line-point">Контакты</a>
+						</span>
+						<span class="menupoint">
+                            <a href="#" class="line-point">&#128269;</a>
+                        </span>
+						<!--<button type="button" class="basket">5</button>-->
+                        <!--<div class="basket-label">В корзине 5 пряников</div>-->
+                    </nav>
+			</div>
+			
+		</header>
+		<main class="catalog">
+                <aside>
+					<div class="catmenu">
+						<div class="catmenu_item">
+							<a href="#">Новинки</a>
+							<div class="submenu">
+								<a href="#">Tovar 1 version 1</a>
+								<a href="#">Tovar 1 version 2</a>
+								<a href="#">Tovar 1 version 3</a>
+								<a href="#">Tovar 1 version 4</a>
+							</div>
+							<div class="submenu_mover">V</div>
+						</div>
+						<div class="catmenu_item">
+							<a href="#">Sale</a>
+							<div class="submenu">
+                                <a href="#">Tovar 2 version 1</a>
+                                <a href="#">Tovar 2 version 2</a>
+                            </div>
+                            <div class="submenu_mover">V</div>
+                        </div>
+						<div class="catmenu_item">
+							<a href="#">Готовые пряники</a>
+								<div class="submenu">
+									<a href="#">Tovar 3 version 1</a>
+									<a href="#">Tovar 3 version 2</a>
+									<a href="#">Tovar 3 version 3</a>
+								</div>
+								<div class="submenu_mover">V</div>
+                        </div>
+						<div class="catmenu_item">
+							<a href="#">Формы для пряников</a>
+						</div>
+						<div class="catmenu_item">
+                            <a href="#">Инвентарь</a>
+                        </div>
+						<div class="catmenu_item">
+                            <a href="#">Пищевые красители</a>
+                        </div>
+						<div class="catmenu_item">
+                            <a href="#">Посыпка и декор</a>
+                        </div>
+						<div class="catmenu_item">
+                            <a href="#">Упаковка</a>
+                        </div>
+					</div>
+                </aside>
+				<div class="order">
+                    <h1>Корзина</h1>
+                    <p class="nihil">Ваша корзина пуста.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Наименование</th>
+                                <th scope="col">Количество</th>
+                                <th scope="col">Цена</th>
+                                <th scope="col">Сумма</th>
+                                <th scope="col">Удалить</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" data-tovar="5711">1</th>
+                                <td>Товар 1</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">5</td>
+                                <td class="sum">50</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-tovar="3432">2</th>
+                                <td>Товар 2</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">10</td>
+                                <td class="sum">100</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-tovar="4846">3</th>
+                                <td>Товар 3</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">15</td>
+                                <td class="sum">150</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">Итого</th>
+                                <td colspan="5" class="allsum">300</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <form id="orderdata">
+                        <input type="text" id="name">
+                        <input type="text" id="address">
+                        <input type="text" id="email">
+                        <input type="text" id="date" placeholder="Выберите дату">
+						<button type="button" class="getcalendar">Вызвать календарь</button>
+						<div class="screen">
+						<div class="modal"></div>
+						</div>
+                        <textarea id="comment"></textarea>
+                        <button type="submit">Отправить заказ</button>
+                    </form>
+                </div>
+		</main>
+		<footer>
+			<div class="topfooter">
+				<div class ="container">
+					<div class="title">Компания</div>
+						<div class="item">О компании</div>
+						<div class="item">Новости</div>
+						<div class="item">Вакансии</div>
+				</div>
+				<div class ="container">
+					<div class="title">Информация</div>
+						<div class="item">Условия оплаты</div>
+						<div class="item">Условия доставки</div>
+						<div class="item">Помощь</div>
+				</div>
+				<div class ="container">
+					<div class="title">Наши контакты</div>
+						<div class="item">&#128222; +7(903)777-77-77</div>
+						<div class="item">
+						<a href="https://www.instagram.com/pryanikland_msk/"><img src="images/instagram.png"></a>
+						</div>
+				</div>
+			</div>
+			<div class="bottomfooter">
+            <div class="container">
+                Copyright © 2021 Все права защищены.
+            </div>
+			</div>
+		</footer>
+	</div>
+	<div class="popup-desk">
+		<div class ="popup">
+			<!--<p class="popup-header">Личный кабинет</p>
+			<input type="text" name="fullname" placeholder="Логин">
+			<input type="password" name="password" placeholder="Пароль">
+			<button type="submit">Войти</button>
+			<a href="#">Зарегистрироваться</a> -->
+		</div>
+	</div>
+</body>
+</html>	
+			
