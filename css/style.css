@@ -34,8 +34,8 @@ p {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: black;
-	opacity: .3;
+	background: rgba(0,0,0,.3);
+	
 }
 .popup-desk.active {
 	display: block;
@@ -52,16 +52,19 @@ p {
 }
 input[type="text"], input[type="password"] {
 	width: 200px;
-	height: 50px;
+	height: 30px;
 	border: 1px solid #000;
 	box-sizing: border-box;
-	border-radius: 10px;
+}
+.popup-header{
+	font-weight: 700;
+	color: #ce37ff;
 }
 button {
 	width: 100px;
 	height: 40px;
-	background: #fff;
-	color: #ce37ff;
+	background: #ce37ff;
+	color: #fff;
 	font: inherit;
 	cursor: pointer;
 }
@@ -83,7 +86,7 @@ button {
 	background: #ce37ff;
 	color: #fff;
 }
-.
+
 #yourcity {
 	cursor: pointer;
 }
@@ -130,7 +133,7 @@ button {
 .menupoint:hover {
 	border-color: #000;
 	background: #fff;
-	z-index:2;
+	z-index:1;
 }
 .menupoint:hover .line-point {
 	color: #ce37ff;
@@ -166,7 +169,7 @@ button {
 .slider {
     position: relative;
     width: 1000px;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
 }
 .slide {
@@ -174,14 +177,12 @@ button {
     top: 0;
     left: 0;
     width: 1000px;
-    height: 400px;
+    height: 500px;
 }
-.slide.active {
-    z-index: 1;
-}
+
 .slide img {
     width: 1000px;
-    height: 400px;
+    height: 500px;
 }
 .rule {
     position: absolute;
@@ -190,7 +191,7 @@ button {
     right: 0;
     bottom: 0;
     display: none;
-    z-index: 2;
+    z-index: 1;
 }
 .slider:hover .rule {
     display: block;
@@ -304,7 +305,85 @@ footer .container {
 	color: white;
 	cursor: pointer;
 }
+.order .button{
+	width: 200px;
+	height: 40px;
+	background: #ce37ff;
+	color: #fff;
+	font: inherit;
+	cursor: pointer;
+}
+textarea{
+	width: 200px;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+/* calendar */
 
+.popup-desk {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.3);
+	
+}
+.popup-desk.active {
+	display: block;
+}
+.popup {
+	position: absolute;
+	left: calc(50% - 150px);
+	top: 300px;
+	width: 300px;
+	background: #fff;
+	border-radius: 20px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.popup table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+.popup th {
+	width: 50px;
+	box-sizing: border-box;
+	border: none;
+	font-weight: bold;
+}
+.popup td {
+	text-align: center;
+	width: 50px;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+.popup .holiday {
+	border-color: red;
+	color: red;
+}
+.popup .today {
+	background: #ce37ff;
+	color: white;
+}
+.popup .selected {
+	background: pink;
+	color: white;
+}
+.popup .header {
+	display: flex;
+	justify-content: space-between;
+}
+.popup .header span {
+	display: block;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	font-size: 30px;
+}
 /* aside */
 aside{
 	flex: none;
@@ -358,6 +437,7 @@ aside{
 	position: absolute;
 	left: 0;
 }
+
 /* different screens */
 @media (min-width: 576px) {
 	.cat-blocks {
