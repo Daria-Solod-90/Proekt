@@ -1,4 +1,27 @@
 $(function(){
+    $('#yourcity').click(function(){
+        $('.popup-desk').addClass('active').html('<div class="popup gorod"><p>Ваш город - Москва?</p><button class="yes" type="button">ДА</button><button class="no"  type="button">НЕТ</button></div>');
+        $('.gorod button').click(function(){
+            
+            if ($(this).hasClass('no')) {
+                $('#yourcity').html('<p>Ваш город: Немосква</p>');
+            } else {
+                $('#yourcity').html('<p>Ваш город: Москва</p>');
+            }
+            $('.popup-desk').click();
+        })
+    });
+    
+    
+    /*
+    document.getElementById('yourcity').addEventListener('click', function(){
+        (confirm('Ваш город - Москва?')) ? (document.getElementById('yourcity').innerHTML = '<p>Ваш город: Москва</p>') : (document.getElementById('yourcity').innerHTML = '<p>Ваш город: Немосква</p>');
+    });
+    */
+   
+    
+    
+    
     $('.submenu_mover').click(function(){
         if ($(this).parent().hasClass('open')) {
             $('.catmenu_item.open').removeClass('open').find('.submenu').animate({
@@ -14,22 +37,29 @@ $(function(){
         }
     });
     
-	$('#yourcity').click(function(){
-        $('.popup-desk').addClass('active');
-        $('.popup').html('<p class="popup-header">Ваш город: Москва?</p><button type="button" class="btn-yes">Да</button>  <button type="button" class="btn-no">Нет</button>');
-    });
-	
     $('button.basket').click(function(){
         $('.popup-desk').addClass('active');
+        $('.popup-desk').html('<div class="popup"></div>');
         $('.popup').html('<p class="popup-header">Личный кабинет</p><input type="text" name="fullname" placeholder="Логин"><input type="password" name="password" placeholder="Пароль"><button type="submit">Войти</button><a href="https://yandex.ru/" class="register">Зарегистрироваться</a>');
-        $('.basket').html(Войти);
+        $('.basket').html(6);
     });
     
     $('.popup-desk').click(function(e){
         if (e.target == this) {
             $(this).removeClass('active');
-            $('.popup').empty();
-            $('.basket').html(Войти);
+            $('.popup-desk').empty();
+            $('.basket').html(5);
+        }
+    });
+    
+    $(document).on('click', '.register', function(e){
+        e.preventDefault();
+        if ($('.basket').html()==6) {
+            $('.popup').html('<p class="popup-header">Личный кабинет закрыт на ремонт.<br>Регистрации не будет до 1 января.</p><a href="https://yandex.ru/" class="register">Войти</a>');
+            $('.basket').html(5);
+        } else {
+            $('.popup').html('<p class="popup-header">Личный кабинет</p><input type="text" name="fullname" placeholder="Логин"><input type="password" name="password" placeholder="Пароль"><button type="submit">Войти</button><a href="https://yandex.ru/" class="register">Зарегистрироваться</a>');
+            $('.basket').html(6);
         }
     });
     
@@ -57,7 +87,13 @@ $(function(){
         e.preventDefault();
         orderAction();
     })
+	
+	if ($('.product').length) {
+        $('.main-image').on('click', 'img', seebigimage);
+        $('.small-image').on('click', 'img', changeimage);
+    }
 });
+
 
 /* slider */
 $(function(){

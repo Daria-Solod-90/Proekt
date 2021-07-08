@@ -68,6 +68,41 @@ button {
 	font: inherit;
 	cursor: pointer;
 }
+.gorod p {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.gorod button {
+	border: none;
+	color: white;
+	width: calc(50% - 10px);
+}
+.gorod button:first-of-type {
+	background: pink;
+	margin: 0 10px 0 0;
+}
+.gorod button:last-of-type {
+	background: #ce37ff;
+	margin: 0 0 0 10px;
+}
+.lightbox {
+	left: 30px;
+	right: 30px;
+	top: 30px;
+	width: auto;
+}
+.lightbox img {
+	max-width: 100%;
+}
+.cross {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	color: red;
+	font: bold 30px Arial;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
 /* header */
 .topheader .container{
 	display: flex;
@@ -139,8 +174,10 @@ button {
 	color: #ce37ff;
 }
 .pulldown-point:hover {
-	color: #000;
+	background: #ce37ff;
+	color: #fff;
 }
+
 #carouselExampleControls{
 	width: 1000px;
 	margin: auto;
@@ -241,6 +278,12 @@ footer .container {
 }
 .title{
 	font: bold 30px 'Roboto', sans-serif;
+	cursor: pointer;
+}
+.title a{
+	text-decoration: none;
+	color: #fff;
+
 }
 .item{
 	opacity: 0.6;
@@ -437,6 +480,34 @@ aside{
 	position: absolute;
 	left: 0;
 }
+/* product */
+.product {
+	width: 100%;
+}
+.gallery-desk {
+	float: left;
+	margin-right: 10px;
+}
+.main-image {
+	padding: 24px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.gallery {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.small-image {
+	padding: 4px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
 
 /* different screens */
 @media (min-width: 576px) {
