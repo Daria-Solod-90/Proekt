@@ -85,7 +85,7 @@ button {
 	background: #ce37ff;
 	margin: 0 0 0 10px;
 }
-.lightbox {
+.popup.lightbox {
 	left: 30px;
 	right: 30px;
 	top: 30px;
@@ -307,11 +307,29 @@ footer .container {
 	gap:8px;
 }
 .cat-unit {
-	height: 300px;
-	width: 350px;
+	height: 430px;
+	width: 250px;
 	background: pink;
 }
-
+.photo{
+	padding:10px 25px 0;
+	cursor: pointer;
+	}
+.photo:hover { 
+	width:260px; 
+	transition: transform .2s;
+}
+.basket_catalog {
+	height:35px;
+	width:200px;
+	margin: 0 25px;
+}
+.product-name{
+	text-align: center;
+}
+.price {
+	text-align: center;
+}
 /* order */
 .order {
 	width: 100%;
@@ -403,7 +421,12 @@ textarea{
 	width: 50px;
 	box-sizing: border-box;
 	border: 1px solid black;
+	cursor: pointer;
 }
+.popup td:hover {
+	background:pink;
+}
+
 .popup .holiday {
 	border-color: red;
 	color: red;
@@ -507,8 +530,22 @@ aside{
 	border-radius: 5px;
 	cursor: pointer;
 }
-
-
+.description-desk{
+	margin: 20px;
+	width:
+}
+.inbasket {
+	width: 200px;
+}
+/* contacts */
+main .container {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+.contact_label{
+	font:  30px 'Roboto', sans-serif;
+}
 /* different screens */
 @media (min-width: 576px) {
 	.cat-blocks {
