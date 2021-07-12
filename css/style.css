@@ -6,7 +6,7 @@ p {
 	margin: 0;
 }
 .container {
-	width: 1168px;
+	width: 1000px;
 	margin: 0 auto;
 	padding: 16px;
 }
@@ -142,7 +142,6 @@ button {
 	background: #fff;
 	display: block;
 	text-align: center;
-	
 }
 .menupoint {
 	display: inline-block;
@@ -178,11 +177,6 @@ button {
 	color: #fff;
 }
 
-#carouselExampleControls{
-	width: 1000px;
-	margin: auto;
-	padding:10px;
-}
 .basket {
 	float: right;
 	margin: 30px 0 30px 50px;
@@ -211,10 +205,9 @@ button {
 }
 .slide {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 1000px;
     height: 500px;
+	padding:
 }
 
 .slide img {
@@ -566,7 +559,33 @@ main .container {
 .contact_label{
 	font:  30px 'Roboto', sans-serif;
 }
+
+
 /* different screens */
+
+@media (min-width: 1400px) {
+	.cat-blocks {
+		gap: 14px;
+	}
+}
+@media (min-width: 1200px) {
+	.cat-blocks {
+		gap: 22px;
+	}
+}
+@media (min-width: 1020px) {
+	.cat-blocks {
+		gap: 10px;
+	}
+	.container{
+		width: 700px;
+	}
+}
+@media (min-width: 768px) {
+	.cat-blocks {
+		gap: 4px;
+	}
+}
 @media (min-width: 576px) {
 	.cat-blocks {
 		gap: 32px;
@@ -578,23 +597,8 @@ main .container {
 		gap: 16px;
 	}
 }
-@media (min-width: 768px) {
+@media (min-width: 320px) {
 	.cat-blocks {
 		gap: 4px;
-	}
-}
-@media (min-width: 992px) {
-	.cat-blocks {
-		gap: 10px;
-	}
-}
-@media (min-width: 1200px) {
-	.cat-blocks {
-		gap: 22px;
-	}
-}
-@media (min-width: 1400px) {
-	.cat-blocks {
-		gap: 14px;
 	}
 }
