@@ -563,42 +563,27 @@ main .container {
 
 /* different screens */
 
-@media (min-width: 1400px) {
-	.cat-blocks {
-		gap: 14px;
+
+@media (max-width:1400px) {
+	.container {
+		max-width: 1000px;
 	}
 }
-@media (min-width: 1200px) {
-	.cat-blocks {
-		gap: 22px;
+@media (max-width:1020px) {
+	.topfooter {
+		max-width: 980px;
+		
 	}
 }
-@media (min-width: 1020px) {
-	.cat-blocks {
-		gap: 10px;
-	}
-	.container{
-		width: 700px;
+@media (max-width:768px) {
+	.topfooter {
+		max-width: 400px;
+		
 	}
 }
-@media (min-width: 768px) {
-	.cat-blocks {
-		gap: 4px;
-	}
-}
-@media (min-width: 576px) {
-	.cat-blocks {
-		gap: 32px;
-	}
-	aside {
-		width: 260px;
-	}
-	.catalog {
-		gap: 16px;
-	}
-}
-@media (min-width: 320px) {
-	.cat-blocks {
-		gap: 4px;
+@media (max-width:320px) {
+	.topfooter {
+		max-width: 285px;
+		
 	}
 }
