@@ -1,15 +1,15 @@
 const order = [
     {
         id: 5711,
-        value: 10
+        value: 1
     },
     {
         id: 3432,
-        value: 10
+        value: 1
     },
     {
         id: 4846,
-        value: 10
+        value: 1
     }
 ];
 function tovarDelete(point) {
