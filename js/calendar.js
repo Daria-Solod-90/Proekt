@@ -9,7 +9,7 @@ function makePopup(my_year, my_month){
     let prev_days = (my_weekday + 6) % 7;
     let weeks = Math.ceil((month_length + prev_days) / 7);
 
-    let str = '<div class="header">';
+    let str = '<div class="popup"><div class="header">';
     str += '<span class="left">&#171;</span>';
     str += '<b>' + MONTHNAMES[my_month] + ' ' + my_year + '</b>';
     str += '<span class="right">&#187;</span>';
@@ -55,7 +55,7 @@ function makePopup(my_year, my_month){
     
     str += '<div class="footer"></div>';
     
-    $('.popup').html(str);
+    $('.popup-desk').html(str);
     
     $('.header span').click(function(){
         let a = my_year;
@@ -83,7 +83,7 @@ function makePopup(my_year, my_month){
         let str = arr[2] + '-' + arr[1] + '-' + arr[0];
         $('#date').val(str);
         $('.active').removeClass('active');
-        $('.popup').empty();
+        $('.popup-desk').empty();
     });
     
     $('.popup-desk').addClass('active');
